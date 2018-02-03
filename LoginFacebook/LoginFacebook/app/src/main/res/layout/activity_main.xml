@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.loginfacebook.MainActivity">
+
+
+
+        <ImageView
+            android:id="@+id/imv_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edt_margin_bottom"
+            android:layout_marginLeft="@dimen/edt_margin_left"
+            android:layout_marginRight="@dimen/edt_margin_right"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/image_facebook"
+            app:srcCompat="@drawable/image_facebook" />
+
+        <EditText
+            android:id="@+id/edt_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_fb"
+            android:layout_marginBottom="@dimen/edt_margin_bottom"
+            android:layout_marginLeft="@dimen/edt_margin_left"
+            android:layout_marginRight="@dimen/edt_margin_right"
+            android:layout_marginTop="@dimen/edt_margin_top"
+            android:width="330dp"
+            android:height="50dp"
+            android:background="@color/white"
+            android:drawablePadding="@dimen/text_pading"
+            android:ems="10"
+            android:hint="@string/hint_email_phone"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="  "
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_mail"
+            android:layout_marginBottom="@dimen/edt_margin_bottom"
+            android:layout_marginLeft="@dimen/edt_margin_left"
+            android:layout_marginRight="@dimen/edt_margin_right"
+            android:layout_marginTop="@dimen/edt_margin_top"
+            android:width="330dp"
+            android:background="@color/white"
+            android:drawablePadding="@dimen/text_pading"
+            android:ems="10"
+            android:hint="@string/hint_pass"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imv_fb"
+            android:layout_alignRight="@+id/imv_fb"
+            android:layout_below="@+id/edt_pass"
+            android:layout_marginTop="30dp"
+            android:width="330dp"
+            android:background="@color/blue_dark"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/text_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="@string/text_sign_up"
+            android:background="@drawable/rounded_btn"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            app:srcCompat="@drawable/que" />
+
+    </RelativeLayout>
